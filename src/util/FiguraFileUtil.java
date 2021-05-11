@@ -33,18 +33,18 @@ public class FiguraFileUtil {
         PrintWriter pw = null;
         try
         {
-            fichero = new FileWriter(path+"/"+nombreArchivo);
+            fichero = new FileWriter(path+"/"+nombreArchivo+".json");
             pw = new PrintWriter(fichero);
 
             for (Figura figura : figuras) {
                 if (figura instanceof Cuadrado) {
-                	pw.println(" {“tipo”:1,nombre”:”"+figura.getNombre()+"”, “valores”:”"+figura.getValores()+"”} ");               	
+                	pw.println(" {“tipo”:1,“nombre”:”"+figura.getNombre()+"”, “valores”:”"+figura.getValores()+"”} ");               	
                 }
                 else if (figura instanceof Circulo) {
-                	pw.println(" {“tipo”:2,nombre”:”"+figura.getNombre()+"”, “valores”:”"+figura.getValores()+"”} ");              	
+                	pw.println(" {“tipo”:2,“nombre”:”"+figura.getNombre()+"”, “valores”:”"+figura.getValores()+"”} ");              	
                 }
                 else if (figura instanceof Triangulo) {
-                	pw.println(" {“tipo”:4,nombre”:”"+figura.getNombre()+"”, “valores”:”"+figura.getValores()+"”} ");               	
+                	pw.println(" {“tipo”:4,“nombre”:”"+figura.getNombre()+"”, “valores”:”"+figura.getValores()+"”} ");               	
                 }
 
             }
@@ -76,7 +76,7 @@ public class FiguraFileUtil {
 	      try {
 	         // Apertura del fichero y creacion de BufferedReader para poder
 	         // hacer una lectura comoda (disponer del metodo readLine()).
-	         archivo = new File (path+"/"+nombreArchivo);
+	         archivo = new File (path+"/"+nombreArchivo+".json");
 	         fr = new FileReader (archivo);
 	         br = new BufferedReader(fr);
 
