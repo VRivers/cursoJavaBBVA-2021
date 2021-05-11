@@ -4,8 +4,9 @@ public class Triangulo extends Figura {
 	
 	private float altura;
 	private float base;
+	private float hipotenusa;
 	
-	
+
 	public Triangulo() { super(); }
 
 	public Triangulo(String nombre) { super(nombre); }
@@ -33,10 +34,17 @@ public class Triangulo extends Figura {
 		this.base = base;
 	}
 	
+	public float getHipotenusa() {
+		return hipotenusa;
+	}
+
+	public void setHipotenusa(float hipotenusa) {
+		this.hipotenusa = (int) Math.sqrt((base*base)+(altura*altura));;
+	}
+	
 
 	@Override
 	public float calcularPerimetro() {
-		int hipotenusa = (int) Math.sqrt((base*base)+(altura*altura));
 		return base+altura+hipotenusa;
 	}
 
@@ -48,8 +56,11 @@ public class Triangulo extends Figura {
 
 	@Override
 	public String getValores() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder("b=");
+		sb.append(base);
+		sb.append("h=");
+		sb.append(hipotenusa);
+		return sb.toString();
 	}
 	
 	

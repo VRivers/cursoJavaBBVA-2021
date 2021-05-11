@@ -53,8 +53,9 @@ public class Circulo extends Figura {
 
 	@Override
 	public String getValores() {
-		// TODO Auto-generated method stub
-		return "Circulo [radio=" + this.radio + "]";
+		StringBuilder sb = new StringBuilder("r=");
+		sb.append(radio);
+		return sb.toString();
 	}
 
 	@Override

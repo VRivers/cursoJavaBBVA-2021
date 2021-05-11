@@ -4,7 +4,6 @@ public class Cuadrado extends Figura {
 
 	private float lado;
 	
-	
 	public Cuadrado(String nombre, float lado) {
 		super(nombre);
 		this.lado = lado;

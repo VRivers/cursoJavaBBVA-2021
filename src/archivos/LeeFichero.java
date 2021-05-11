@@ -13,7 +13,7 @@ class LeeFichero {
 	      try {
 	         // Apertura del fichero y creacion de BufferedReader para poder
 	         // hacer una lectura comoda (disponer del metodo readLine()).
-	         archivo = new File ("C:\\Users\\Victor Rivera\\javaworkspace\\cursoJava\\archivos\\ficheroEscritura.txt");
+	         archivo = new File ("C:\\Users\\Victor Rivera\\javaworkspace\\cursoJava\\archivos\\figuras.json");
 	         fr = new FileReader (archivo);
 	         br = new BufferedReader(fr);
 
