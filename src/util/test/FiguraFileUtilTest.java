@@ -11,12 +11,14 @@ import org.junit.Test;
 import repaso.Circulo;
 import repaso.Cuadrado;
 import repaso.Figura;
+import util.FiguraFileUtil;
 
 	public class FiguraFileUtilTest {
-	Figura cuadrado ;
-	Figura circulo ;
-	
-	ArrayList<Figura> figuras;
+		Figura cuadrado ;
+		Figura circulo ;
+		Figura triangulo ;
+		
+		ArrayList<Figura> figuras;
 
 	@Before
 	public void setUp() throws Exception {
@@ -39,10 +41,10 @@ import repaso.Figura;
 	}
 	
 	
-
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testGenerarArchivo() {
+		//valor esperado, metodo a testear, precision
+		FiguraFileUtil.generarArchivo(figuras, "testGenerarArchivo", "C:/Users/Victor Rivera/javaworkspace/cursoJava/archivos");
 	}
 
 }

@@ -28,7 +28,7 @@ public class FiguraFileUtil {
 		this.path = path;
 	}
 	
-	public static void generarArchivo (ArrayList<Figura> figuras, int nombreArchivo, String path) {
+	public static void generarArchivo (ArrayList<Figura> figuras, String nombreArchivo, String path) {
         FileWriter fichero = null;
         PrintWriter pw = null;
         try
