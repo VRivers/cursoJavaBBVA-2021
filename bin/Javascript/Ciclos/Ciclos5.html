@@ -3,11 +3,17 @@
 
 <script type="text/javascript">
 
-//CONDICIONAL PARA COMPROBAR SI LA EDAD ES MAYOR QUE 18
-var age = 20;
-if( age > 18 ){
-   document.write("<b>Qualifies for driving</b>");
+var x = 1;
+document.write("Entering the loop<br /> ");
+while (x < 20)
+{
+  if (x == 5){ 
+     break;  // breaks out of loop completely
+  }
+  x = x + 1;
+  document.write( x + "<br />");
 }
+document.write("Exiting the loop!<br /> ");
 
 </script>
 

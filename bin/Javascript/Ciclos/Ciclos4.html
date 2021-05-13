@@ -3,14 +3,18 @@
 
 <script type="text/javascript">
 
-//CONDICIONAL PARA COMPROBAR SI LA EDAD ES MAYOR QUE 18
-var age = 20;
-if( age > 18 ){
-   document.write("<b>Qualifies for driving</b>");
+var aProperty;
+document.write("Navigator Object Properties<br /> ");
+for (aProperty in navigator)
+{
+  document.write(aProperty);
+  document.write("<br />");
 }
+document.write ("Exiting from the loop!");
 
 </script>
 
-<p>Set the variable to different value and then try...</p>
+<p>Set the variable to different object and then try...</p>
 </body>
 </html> 
+ 
