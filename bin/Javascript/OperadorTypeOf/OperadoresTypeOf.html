@@ -3,35 +3,28 @@
 
 <script type="text/javascript">
 
-var a = true;
-var b = false;
+var a = 10;
+var b = "String";
 var linebreak = "<br />";
 var result;
 
-//BOOLEANO QUE DEVUELVE LA OPERACION LOGICA DE A Y B
-document.write("(a &&  b) => ");
-result = (a && b);
+//TERNARIO QUE ANALIZARA SI B ES UNA CADENA DE CARACTERES
+result = (typeof b == "string" ? "B is String" : "B is Numeric");
+document.write("Result => ");
 document.write(result);
 document.write(linebreak);
 
-//BOOLEANO QUE DEVUELVE LA OPERACION LOGICA DE A Y B
-document.write("(a || b) => ");
-result = (a || b);
+//TERNARIO QUE ANALIZARA SI A ES UNA CADENA DE CARACTERES
+result = (typeof a == "string" ? "A is String" : "A is Numeric");
+document.write("Result => ");
 document.write(result);
 document.write(linebreak);
 
-//BOOLEANO QUE DEVUELVE LA OPERACION LOGICA DE A Y B
-document.write("!(a && b) => ");
-result = (!(a && b));
-document.write(result);
-document.write(linebreak);
 
 </script>
 
-
-
 <p>Set the variables to different values and different operators and
-then try...</p> 
-
+then try...</p>
 </body>
+</html> 
 </html> 
